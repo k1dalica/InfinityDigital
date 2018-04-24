@@ -12,6 +12,8 @@
 
     <Newsletter />
 
+    <Random />
+
     <Contact />
 
     <FooterView />

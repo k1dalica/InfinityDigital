@@ -3,7 +3,6 @@
     <div class="info">
       <h3>Reikon Karate</h3>
       <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorum unde, quod et illum illo!</span>
-      
       <button>Preview</button><a href="" target="_blank"><button>Visit website</button></a>
     </div>
   </div>

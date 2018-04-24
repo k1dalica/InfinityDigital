@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style scoped>
-  #home { height: 100%; min-height: 100%; width: 100%; color: #fff; font-size: 3em; background-image: url(./../assets/bg.jpg); background-size: cover; }
+  #home { height: 100%; min-height: 100%; width: 100%; color: #fff; font-size: 3em; background-image: url(./../assets/bg2.jpg); background-size: cover; }
   #home h1 { font-weight: 200; }
   #home span { display: block; }
   #home span.ml { margin-left: 200px; }
