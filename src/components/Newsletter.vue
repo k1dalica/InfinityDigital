@@ -31,7 +31,7 @@ export default {
 section { background-color: #f9f9f9;  }
 section .wave { display: block; width: 100%; }
 .newsletter { padding: 100px 15px; text-align: center; background-image: url(./../assets/newsletter-bg.png); background-position: center; background-repeat: no-repeat; }
-.newsletter h1 { font-size: 55px; margin: 0; }
+.newsletter h1 { font-family: 'Lato', sans-serif; font-size: 47px; font-weight: 800; margin: 0; text-transform: uppercase; }
 .newsletter span { font-size: 19px; display: block; margin-top: 20px; }
 .newsletter .form-group { position: relative; display: block; width: 100%; max-width: 500px; margin: 0 auto; margin-top: 40px; }
 .newsletter .form-group .input { transition: all ease-out .2s; background-color: #fff; padding: 0 140px 0 20px; width: 100%; box-sizing: border-box; height: 50px; border: 1px solid rgba(0,0,0,0.1); border-radius: 25px; outline: none; }

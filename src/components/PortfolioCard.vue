@@ -3,7 +3,10 @@
     <div class="info">
       <h3>Reikon Karate</h3>
       <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorum unde, quod et illum illo!</span>
-      <button>Preview</button><a href="" target="_blank"><button>Visit website</button></a>
+      <div class="buttons">
+        <span>Preview</span>
+        <span>Visit website</span>
+      </div>
     </div>
   </div>
 </template>
@@ -26,8 +29,12 @@ export default {
     background: -webkit-linear-gradient(left, rgba(0,174,180,0.9) 0%,rgba(0,207,200,0.9) 100%);
     background: linear-gradient(to right, rgba(0,174,180,0.9) 0%,rgba(0,207,200,0.9) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeb4', endColorstr='#00cfc8',GradientType=1 ); }
-  .card .info h3 { font-size: 35px; font-weight: 300; margin: 0; }
-  .card .info span { display: block; margin-top: 10px; font-size: 18px; line-height: 25px; }
+  .card .info h3 { font-family: 'Lato', sans-serif; font-size: 30px; font-weight: 500; margin: 0; }
+  .card .info span { display: block; margin-top: 20px; font-size: 17px; line-height: 27px; }
+  .card .info .buttons { text-transform: uppercase; }
+  .card .info .buttons span { font-family: 'Lato', sans-serif; font-size: 14px; font-weight: bold; display: inline-block; box-sizing: border-box; border-bottom: 1px solid transparent; }
+  .card .info .buttons span:first-child { margin-right: 20px; }
+  .card .info .buttons span:hover { border-bottom: 1px solid #fff; cursor: pointer; }
   .card .info button { margin-right: 5px; font-family: 'Lato', sans-serif; font-weight: 300; text-transform: uppercase; font-size: 12px; transition: all ease-out 0.2s; margin-top: 10px; height: 40px; padding: 0 30px; background-color: transparent; outline: none; border: 1px solid #fff; border-radius: 25px; color: #fff; box-sizing: border-box; }
   .card .info button:hover, .card .info button:focus { background-color: #fff; color: #000; cursor: pointer; }
 </style>

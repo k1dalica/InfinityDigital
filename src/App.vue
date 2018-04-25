@@ -52,7 +52,8 @@ export default {
 </script>
 
 <style>
-body, html { width: 100%; height: 100%; min-height: 100%; margin: 0; padding: 0; font-family: 'Lato', sans-serif; font-weight: 300; cursor: url(/assets/images/cursor.png), auto !important; }
+/* font-family: 'Lato', sans-serif;*/
+body, html { width: 100%; height: 100%; min-height: 100%; margin: 0; padding: 0; font-size: 14px; font-family: 'Montserrat', sans-serif; font-weight: 300; cursor: url(/assets/images/cursor.png), auto !important; }
 a { text-decoration: none; color: inherit; }
 img { outline: none; border: none; }
 

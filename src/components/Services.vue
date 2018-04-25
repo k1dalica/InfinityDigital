@@ -81,8 +81,8 @@ export default {
   .services-wrapper .container .image-wrapper .info { position: absolute; top: 0; z-index: 10; color: #fff; padding: 20px 40px; }
   .services-wrapper .container.one .image-wrapper img { width: 500px; transition: all ease-in-out .2s; }
   .services-wrapper .container .image-wrapper img { display: block; }
-  .services-wrapper .container .image-wrapper .info h2 { font-size: 40px; font-weight: 200; }
-  .services-wrapper .container .image-wrapper .info span { opacity: 0; transition: all ease-in-out .2s; display: block; width: 400px; font-size: 22px; line-height: 30px; margin-top: 20px; }
+  .services-wrapper .container .image-wrapper .info h2 {  font-family: 'Lato', sans-serif; font-size: 40px; font-weight: 300; }
+  .services-wrapper .container .image-wrapper .info span { opacity: 0; transition: all ease-in-out .2s; display: block; width: 400px; font-size: 18px; line-height: 30px; margin-top: 20px; }
   .services-wrapper .container.one .image-wrapper { bottom: 0; right: 0; transition: all ease-in-out .2s; }
   .services-wrapper .container.one .image-wrapper img { width: 500px; transition: all ease-in-out .2s; }
   .services-wrapper .container.one .image-wrapper .info { left: 0; text-align: left; }

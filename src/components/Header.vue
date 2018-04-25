@@ -37,7 +37,7 @@ export default {
 
   header nav #logo { float: left; display: flex; justify-content: center; align-items: center; height: 90px; }
   header nav #logo img { display: inline-block; vertical-align: middle; height: 35px; }
-  header nav #logo h1 { display: inline-block; margin: 0 0 0 10px; vertical-align: middle; font-weight: 300; font-size: 19px; }
+  header nav #logo h1 {  font-family: 'Lato', sans-serif; display: inline-block; margin: 0 0 0 10px; vertical-align: middle; font-weight: 300; font-size: 19px; }
   header nav #logo:hover h1 { color: #fff; }
 
   header nav #menu { float: right; line-height: 90px; margin: 0; padding: 0; font-size: 0; text-transform: uppercase; }
