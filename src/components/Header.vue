@@ -7,7 +7,7 @@
           <h1><b>Infinity</b>Studio</h1>
         </div>
       </a>
-      <ul id="menu">
+      <ul id="menu" ref="menu">
         <li class="active"><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#our-work">Our work</a></li>
@@ -26,6 +26,38 @@ export default {
   name: '',
   data () {
     return {
+    }
+  },
+  mounted () {
+    let lis = document.getElementById('menu').getElementsByTagName('li')
+    for(let i=0; i < lis.length; i++) {
+      let li = lis[i]
+      li.addEventListener('click', (event) => {
+        event.preventDefault()
+        let tag = event.target.getAttribute('href')
+        let top = document.querySelector(tag).offsetTop
+        let cp = document.documentElement.scrollTop || document.body.scrollTop;
+        this.smoothScroll(cp, top)
+      })
+    }
+  },
+  methods: {
+    smoothScroll (cp, top) {
+      let i = cp || 0;
+      let ipp = 20
+      if (i <  top) {
+        i = (i + ipp) >= top ? top : i + ipp
+        this.sta(i, top)
+      } else if (i > top) {
+        i = (i - ipp) <= top ? top : i + ipp
+        this.sta(i, top)
+      }
+    },
+    sta (i, top) {
+      setTimeout(() => {
+        window.scrollTo(0, i);
+        this.smoothScroll(i, top);
+      }, 5);
     }
   }
 }

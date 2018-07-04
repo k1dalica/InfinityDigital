@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style scoped>
-  section { background-color: #3a4149; position: relative; color: #fff; padding: 100px; margin-top: 300px; }
+  section { background-color: #3a4149; position: relative; color: #fff; padding: 100px; margin-top: 300px; box-sizing: border-box; }
   section .background { position: absolute; top: 0; right: -200px; height: 100%; }
   section .cloud { position: absolute; z-index: 10; }
   section .c1 { left: 470px; bottom: -50px; }
