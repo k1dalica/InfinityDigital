@@ -1,9 +1,11 @@
 <template>
   <main id="home" class="full-size">
     <div class="full-size">
-      <h1><span><b>WHAT</b> WE DO</span>
-          <span class='ml'><b>IS WHY</b> WE DO IT.</span></h1>
-      <a href="#section2"><div class="scroll-down"></div></a>
+      <h1>
+        <span><b>WHAT</b> WE DO</span>
+        <span class='ml'><b>IS WHY</b> WE DO IT.</span>
+      </h1>
+      <a v-scroll-to="'#services'"><div class="scroll-down"></div></a>
     </div>
   </main>
 </template>

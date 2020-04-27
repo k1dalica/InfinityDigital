@@ -12,11 +12,11 @@
           <ul>
             <li>
               <img src='@/assets/images/phone.png'>
-              <span>Call us any time you want<br>064 / 9543 - 183</span>
+              <span>Feel free to give us a call<br>064 / 9543 - 183</span>
             </li>
             <li>
               <img src='@/assets/images/mail.png'>
-              <span>Send us an email !<br>office@infstudio.com</span>
+              <span>Send us an email<br>office@infstudio.com</span>
             </li>
             <li>
               <img src='@/assets/images/pin.png'>

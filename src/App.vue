@@ -1,22 +1,22 @@
 <template>
   <div id="app">
-    <Navigation />
+    <navigation />
 
-    <Home />
+    <home />
 
-    <Services />
+    <services />
 
-    <Devices />
+    <devices />
 
-    <Portfolio />
+    <portfolio />
 
-    <Newsletter />
+    <newsletter />
 
-    <Hosting />
+    <hosting />
 
-    <Contact />
+    <contact />
 
-    <FooterView />
+    <footer-view />
   </div>
 </template>
 

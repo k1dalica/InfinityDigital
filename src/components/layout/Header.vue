@@ -62,6 +62,7 @@ header {
     top: 0;
     z-index: 999;
     background-color: #fff;
+    border-bottom: 1px solid #efefef;
 
     nav {
       color: #555;
