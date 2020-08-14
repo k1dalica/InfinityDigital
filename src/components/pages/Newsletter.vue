@@ -42,7 +42,6 @@ section .wave {
   font-size: 47px;
   font-weight: 800;
   margin: 0;
-  text-transform: uppercase;
 }
 
 .newsletter span {

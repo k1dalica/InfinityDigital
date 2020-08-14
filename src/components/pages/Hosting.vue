@@ -5,7 +5,7 @@
     <div class="hosting-wrapper">
       <h1>Cloud<br>web hosting</h1>
       <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, voluptatibus veniam vero dolorum ipsam architecto quisquam tempora enim minus, natus delectus nulla libero sint dolor.</span>
-      <button>Button</button>
+      <button>See prices</button>
 
       <img src="@/assets/images/services/hosting.png" class="background">
       <img src="@/assets/images/cloud.png" class="cloud c1">
@@ -72,7 +72,6 @@ export default {
   font-family: 'Montserrat', sans-serif;
   font-size: 47px;
   font-weight: 800;
-  text-transform: uppercase;
   margin: 0;
 }
 

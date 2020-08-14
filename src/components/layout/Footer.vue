@@ -5,7 +5,7 @@
         v-scroll-to="'#home'"
         src="@/assets/images/logo-big.png"
         class="logo"
-        alt="Infinity Studio Logo" />
+        alt="Infinity Digital Logo" />
       <ul>
         <li><a v-scroll-to="'#home'">Home</a></li>
         <li><a v-scroll-to="'#services'">Services</a></li>
@@ -38,7 +38,7 @@
       </ul>
     </div>
     <div class="copyright">
-      <span>Copyright Infinity Studio {{ year }} ©<br>
+      <span> © <b>Infinity</b>Digital<br>
       All rights reserved.</span>
     </div>
   </footer>
@@ -70,6 +70,9 @@ footer {
     margin-top: 15px;
     font-size: 15px;
     line-height: 25px;
+    b {
+      font-weight: 500;
+    }
   }
   .upper ul {
     list-style: none;

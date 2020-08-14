@@ -19,7 +19,7 @@ export default {
 <style lang="scss" scoped>
 .heading { text-align: center; }
 .heading .wrapper { display: inline-block; margin: 0 auto; margin-bottom: 50px; }
-.heading .wrapper h1 { font-family: 'Montserrat', sans-serif; font-size: 47px; font-weight: 800; margin: 0 auto; position: relative; display: inline-block; text-align: center; color: #2d344a; text-transform: uppercase; }
+.heading .wrapper h1 { font-family: 'Montserrat', sans-serif; font-size: 47px; font-weight: 800; margin: 0 auto; position: relative; display: inline-block; text-align: center; color: #2d344a; }
 .heading .wrapper .line { width: 100%; height: 1px; background-color: #d8dee4; margin-top: 20px; }
 .heading .wrapper .line i { display: block; height: 1px; background-color: $primary; }
 </style>
