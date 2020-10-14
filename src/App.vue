@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <cookies />
+
     <navigation />
 
     <home />
@@ -10,11 +12,11 @@
 
     <portfolio />
 
-    <newsletter />
-
     <hosting />
 
     <contact />
+
+    <newsletter />
 
     <footer-view />
   </div>
@@ -30,6 +32,7 @@ import Portfolio from './components/pages/Portfolio'
 import Hosting from './components/pages/Hosting'
 import Newsletter from './components/pages/Newsletter'
 import FooterView from './components/layout/Footer'
+import Cookies from './components/common/Cookies'
 // import Blog from './components/pages/Blog'
 // import About from './components/pages/About'
 
@@ -37,6 +40,7 @@ export default {
   name: 'App',
 
   components: {
+    Cookies,
     Navigation,
     Home,
     Services,
@@ -46,6 +50,11 @@ export default {
     Newsletter,
     Contact,
     FooterView
+  },
+
+  created () {
+    const lang = localStorage.getItem('lang')
+    this.$i18n.locale = ['en', 'rs'].includes(lang) ? lang : 'en'
   }
 }
 </script>

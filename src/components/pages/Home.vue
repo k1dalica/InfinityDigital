@@ -2,8 +2,8 @@
   <main id="home" class="full-size">
     <div class="full-size">
       <h1>
-        <span><b>INFINITY</b> STARTS HERE.</span>
-        <!-- <span class='ml'>STARTS HERE.</span> -->
+        <span><b>{{ $tc('general.infinity') }}</b></span>
+        <span class='ml'>{{ $tc('general.starts_here') }}.</span>
       </h1>
       <a v-scroll-to="'#services'"><div class="scroll-down"></div></a>
     </div>
@@ -24,24 +24,40 @@ export default {
   width: 100%;
   color: #fff;
   font-size: 3em;
-  background-image: url(../../assets/images/bg2.jpg);
+  background-image: url(../../assets/images/bg.jpg);
   background-size: cover;
+  h1 {
+    text-transform: uppercase;
+    font-weight: 100;
+    b {
+      font-weight: 800;
+    }
+  }
+  span {
+    display: block;
+    &.ml {
+      margin-left: 200px;
+    }
+  }
 }
 
-#home h1 {
-  font-weight: 100;
+@media all and (max-width: 1024px) {
+  #home {
+    font-size: 2rem;
+    span.ml {
+      margin-left: 100px;
+    }
+  }
 }
 
-#home h1 b {
-  font-weight: 800;
-}
-
-#home span {
-  display: block;
-}
-
-#home span.ml {
-  margin-left: 200px;
+@media all and (max-width: 650px) {
+  #home {
+    font-size: 1.5rem;
+    text-align: center;
+    span.ml {
+      margin-left: 0;
+    }
+  }
 }
 
 .scroll-down {
@@ -57,20 +73,19 @@ export default {
   height: 50px;
   border: solid 2px var(--color);
   border-radius: 40px;
-}
-
-.scroll-down::after {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: var(--scroller-size);
-  height: var(--scroller-size);
-  background: var(--color);
-  border-radius: 50%;
-  animation: scroll 1.6s linear infinite;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: var(--scroller-size);
+    height: var(--scroller-size);
+    background: var(--color);
+    border-radius: 50%;
+    animation: scroll 1.6s linear infinite;
+  }
 }
 
 @keyframes scroll {

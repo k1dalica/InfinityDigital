@@ -1,6 +1,6 @@
 <template>
   <section id="blog">
-    <Heading title="Blog" :percent="40" />
+    <heading title="Blog" />
   </section>
 </template>
 
