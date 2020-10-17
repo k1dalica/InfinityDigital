@@ -1,8 +1,8 @@
 <template>
-  <div class="card"
-    :style="{
-      backgroundImage: `url(${image})`
-    }">
+  <div class="card" :style="{ backgroundImage: `url(${image})` }">
+    <a href="https://timepad.rs" target="_blank">
+      <button v-if="timepad" class="shine gradiant badge">TimePad Project</button>
+    </a>
     <div class="info">
       <h3>{{ title }}</h3>
       <span>{{ text }}</span>
@@ -36,6 +36,11 @@ export default {
     link: {
       type: String,
       default: null
+    },
+
+    timepad: {
+      type: Boolean,
+      default: null
     }
   }
 }
@@ -49,6 +54,26 @@ export default {
   background-position: top;
   border-radius: 10px;
   position: relative;
+  .badge {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    height: 35px;
+    width: auto;
+    margin: auto;
+    border-radius: 999px;
+    border: none;
+
+    color: #fff;
+    padding: 0 25px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+  }
   .info {
     max-height: 0;
     overflow: hidden;
@@ -70,7 +95,7 @@ export default {
     transition: all ease 1s;
     h3 {
       font-family: 'Montserrat', sans-serif;
-      font-size: 30px;
+      font-size: 25px;
       font-weight: 500;
       margin: 0;
     }
@@ -134,7 +159,7 @@ export default {
     height: 280px;
     .info {
       h3 {
-        font-size: 25px;
+        font-size: 22px;
       }
       span {
         margin-top: 15px;
@@ -151,7 +176,7 @@ export default {
     .info {
       padding: 0 20px;
       h3 {
-        font-size: 20px;
+        font-size: 18px;
       }
       span {
         margin-top: 10px;
@@ -175,7 +200,7 @@ export default {
     height: 250px;
     .info {
       h3 {
-        font-size: 18px;
+        font-size: 16px;
       }
       span {
         margin-top: 10px;

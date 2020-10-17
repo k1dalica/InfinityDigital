@@ -86,11 +86,9 @@ export default {
 
       $('.nav li a').each(function () {
         var sectionLink = $(this)
-        // capture the height of the navbar
         var navHeight = $('#nav-wrapper').outerHeight() + 1
         var section = $(sectionLink.attr('href'))
 
-        // subtract the navbar height from the top of the section
         if (section.position().top - navHeight <= currentPos && sectionLink.offset().top + section.height() > currentPos) {
           $('.nav li').removeClass('active')
           sectionLink.parent().addClass('active')
@@ -357,7 +355,6 @@ header nav #menu {
     }
     &.button {
       margin-left: 20px;
-      height: 90px;
       display: inline-block;
       a {
         display: inline-block;
@@ -549,6 +546,49 @@ header nav #menu {
         }
       }
     }
+  }
+}
+
+@media all and (orientation: landscape) and (max-height: 400px) {
+  header {
+    position: absolute;
+    top: 20px;
+  }
+}
+@media all and (orientation: landscape) and (max-height: 400px) {
+  header {
+    nav {
+      height: 60px;
+      #logo {
+        height: 60px;
+      }
+      .hamburger-menu {
+        .hamburger {
+          padding: 0 10px;
+        }
+      }
+      #menu {
+        line-height: 60px;
+        li {
+          height: 60px;
+          &.button {
+            button {
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+    }
+    &.open {
+      top: 0;
+      padding-top: 20px;
+    }
+  }
+}
+
+@media all and (max-width: 400px) {
+  header nav #logo h1 {
+    display: none;
   }
 }
 </style>

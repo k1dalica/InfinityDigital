@@ -5,7 +5,8 @@
     <div class="wrapper">
       <heading
         :title="$tc('work.title')"
-        :subtitle="$tc('work.subtitle')" />
+        :subtitle="$tc('work.subtitle')"
+        class="heading" />
 
       <swiper :options="swiperOption">
         <swiper-slide v-for="item in portfolio" :key="item.title">
@@ -45,15 +46,17 @@ export default {
       portfolio: [
         {
           image: iMondial,
-          title: 'Mondial90',
-          text: 'Fully modern presentational website with CMS to pages and SEO for better targeting.',
-          link: 'https://www.mondial90.rs'
+          title: 'Mondial90 - TimePad Project',
+          text: 'Fully modern presentational website with CMS to fully manage pages and SEO for better targeting.',
+          link: 'https://www.mondial90.rs',
+          timepad: true
         },
         {
           image: iFill,
-          title: 'Fill.rs',
+          title: 'Fill.rs - TimePad Project',
           text: 'Multilanguage presentational website with blog and CMS.',
-          link: 'http://fill.rs'
+          link: 'http://fill.rs',
+          timepad: true
         },
         {
           image: iKoturanovic,
@@ -120,6 +123,10 @@ export default {
   section {
     width: 100%;
     min-height: 100%;
+    .heading {
+      padding: 0 30px;
+      box-sizing: border-box;
+    }
     .wrapper {
       width: 100%;
     }
