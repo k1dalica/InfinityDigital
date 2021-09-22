@@ -33,7 +33,14 @@ export default {
   },
 
   portfolio: {
-    visit: 'Pogledaj web sajt'
+    visit: 'Pogledaj web sajt',
+    mondial: 'Potpuno moderan prezentacioni web sajt sa Admin Panelom za puno upravljanja strana kao i SEO-a za bolji marketing.',
+    fill: 'Višejezični prezentacioni sajt sa blogom i Admin Panelom.',
+    bojan: 'Portfolio web sajt sa Admin Panelom za upravljanje celim sajtom. Naš prijatelj Bojan je veoma kreativan i talentovan concept artist. Slobodno ga posetite!',
+    namestaj: 'Prodavnica nameštaja sa mogućnošću online naručivanja. Sa proizvodima kao i sa porudžbinama se lako upravlja kroz Admin Panel',
+    tijana: 'Web sajt - prodavnica sa mogućnošću online plaćanja preko kreditnih kartica ili putem PayPal-a.',
+    wff: 'Sistem za prijavljivanje na turnire online. Članovi Svetske Fudokan Federacije(World Fudokan Federation) se lako i jednostavno mogu prijavite za učestvovanje na SVETSKOM FUDOKAN KARATE ŠAMPIONATU.',
+    reikon: 'Potpuno prilagodljiv web sajt/blog napravljen za Karate Klub Reikon iz Kraljeva. Najkompleksnji CMS (Sistem za upravljanje web sajtom) koji je tim Infinity Digital-a ikada napravio. Sistem koji je vrlo sličan WordPress-u.'
   },
 
   newsletter: {
@@ -47,6 +54,10 @@ export default {
     cloud_hosting: 'Cloud<br>Hosting',
     cloud_hosting_txt: '<strong>Besplatno hostovanje</strong> vašeg novog sajta!<br>Oživi svoj digitalni svet uz pomoć naših prvoklasnih cloud servera <strong>besplatno!</strong>',
     send_us_msg: 'Kontaktiraj nas'
+  },
+
+  other: {
+    design_rush_text: 'je izlistan kao top 30 eCommerce Web Design kompanija na'
   },
 
   contact: {

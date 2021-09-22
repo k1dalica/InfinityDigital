@@ -70,6 +70,29 @@ export default {
   }
 }
 
+@media all and (max-width: 768px) {
+  .cookies-alert {
+    padding: 30px;
+  }
+}
+@media all and (max-width: 600px) {
+  .cookies-alert {
+    flex-direction: column;
+    align-items: flex-start;
+    div {
+      padding-right: 0;
+      span {
+        font-weight: bold;
+        font-size: 15px;
+      }
+      p {
+        white-space: unset;
+        color: #555;
+      }
+    }
+  }
+}
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }

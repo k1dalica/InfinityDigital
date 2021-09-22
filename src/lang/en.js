@@ -33,7 +33,14 @@ export default {
   },
 
   portfolio: {
-    visit: 'Visit website'
+    visit: 'Visit website',
+    mondial: 'Fully modern presentational website with CMS to fully manage pages and SEO for better targeting.',
+    fill: 'Multilanguage presentational website with blog and CMS.',
+    bojan: 'Portfolio website with CMS to manage everything on it. Our friend Bojan is very creative concept artist. Check him out!',
+    namestaj: 'Furniture shop with online ordering. Products and orders are easily managed through CMS.',
+    tijana: 'E-commerce book selling website with online payment system via credit cards or PayPal.',
+    wff: 'Online tournament registration system. Members of World Fudokan Federation from all around the globe can easily submit application to compete in WORLD FUDOKAN KARATE CHAMPIONSHIP.',
+    reikon: 'Fully custimizable website/blog made for Reikon Karate Klub from Kraljevo. Most complex CMS we have ever built that is similar to WordPress.'
   },
 
   newsletter: {
@@ -47,6 +54,10 @@ export default {
     cloud_hosting: 'Cloud<br>Hosting',
     cloud_hosting_txt: '<strong>Free hosting</strong> for your brand new web site!<br>Bring your digital world to our world-class cloud servers for <strong>free!</strong>',
     send_us_msg: 'Contact us'
+  },
+
+  other: {
+    design_rush_text: 'is listed as top 30 eCommerce Web Design Companies on'
   },
 
   contact: {

@@ -43,49 +43,66 @@ export default {
 
   data () {
     return {
-      portfolio: [
+      swiperOption: {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        resizeReInit: true,
+
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          }
+        }
+      }
+    }
+  },
+
+  computed: {
+    portfolio () {
+      return [
         {
           image: iMondial,
           title: 'Mondial90 - TimePad Project',
-          text: 'Fully modern presentational website with CMS to fully manage pages and SEO for better targeting.',
+          text: this.$tc('portfolio.mondial'),
           link: 'https://www.mondial90.rs',
           timepad: true
         },
         {
           image: iFill,
           title: 'Fill.rs - TimePad Project',
-          text: 'Multilanguage presentational website with blog and CMS.',
+          text: this.$tc('portfolio.fill'),
           link: 'http://fill.rs',
           timepad: true
         },
         {
           image: iKoturanovic,
           title: 'Bojan Koturanovic',
-          text: 'Portfolio website with CMS to manage everything on it. Our friend Bojan is very creative concept artist. Check him out!',
+          text: this.$tc('portfolio.bojan'),
           link: 'http://www.bojankoturanovic.com'
         },
         {
           image: iNamestaj,
           title: 'Nameštaj Živković',
-          text: 'Furniture shop with online ordering. Products and orders areeasily managed through CMS.',
+          text: this.$tc('portfolio.namestaj'),
           link: 'https://www.namestajzivkovic.rs'
         },
         {
           image: iTijana,
           title: 'Tijana Medan',
-          text: 'E-commerce book selling website with online payment system via credit cards or PayPal.',
+          text: this.$tc('portfolio.tijana'),
           link: 'https://tijanamedan.com/'
         },
         {
           image: iWFF,
           title: 'WFF - Tournament Registration App',
-          text: 'Online tournament registration system. Members of World Fudokan Federation from all around the globe can easily submit application to compete in WORLD FUDOKAN KARATE CHAMPIONSHIP.',
+          text: this.$tc('portfolio.wff'),
           link: 'http://registrations.fudokan-wff.com'
         },
         {
           image: iReikon,
           title: 'Reikon Karate',
-          text: 'Fully custimizable website/blog made for Reikon Karate Klub from Kraljevo. Most complex CMS we have ever built that is similar to WordPress.',
+          text: this.$tc('portfolio.reikon'),
           link: 'https://www.reikonkarate.com'
         }
         // {
@@ -99,21 +116,7 @@ export default {
         //   text: null,
         //   link: null
         // }
-      ],
-
-      swiperOption: {
-        slidesPerView: 'auto',
-        spaceBetween: 30,
-        // autoResize: true,
-        resizeReInit: true,
-
-        breakpoints: {
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 20
-          }
-        }
-      }
+      ]
     }
   }
 }
