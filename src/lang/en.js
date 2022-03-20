@@ -28,7 +28,7 @@ export default {
   },
 
   work: {
-    title: 'Our past projects',
+    title: 'Some of our past projects',
     subtitle: 'Implementing our digital knowledge into your business world.'
   },
 

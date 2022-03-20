@@ -28,7 +28,7 @@ export default {
   },
 
   work: {
-    title: 'Naši dosadašnji projekti',
+    title: 'Jedni od dosadašnjih projekata',
     subtitle: 'Doprinosimo napretku vašeg biznisa našim steknutim znanjem.'
   },
 

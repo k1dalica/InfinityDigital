@@ -12,7 +12,6 @@
 
     <portfolio />
 
-    <design-rush />
     <!-- <hosting /> -->
 
     <contact />
@@ -31,7 +30,6 @@ import Devices from './components/pages/Devices'
 import Contact from './components/pages/Contact'
 import Portfolio from './components/pages/Portfolio'
 // import Hosting from './components/pages/Hosting'
-import DesignRush from './components/pages/DesignRush'
 import Newsletter from './components/pages/Newsletter'
 import FooterView from './components/layout/Footer'
 import Cookies from './components/common/Cookies'
@@ -48,7 +46,6 @@ export default {
     Services,
     Devices,
     Portfolio,
-    DesignRush,
     Newsletter,
     Contact,
     FooterView

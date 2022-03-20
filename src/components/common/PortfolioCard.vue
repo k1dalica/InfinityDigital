@@ -57,15 +57,13 @@ export default {
   .badge {
     position: absolute;
     top: 20px;
-    left: 0;
-    right: 0;
+    right: 20px;
     z-index: 5;
     height: 35px;
-    width: auto;
     margin: auto;
     border-radius: 999px;
     border: none;
-
+    width: 200px;
     color: #fff;
     padding: 0 25px;
     outline: none;
